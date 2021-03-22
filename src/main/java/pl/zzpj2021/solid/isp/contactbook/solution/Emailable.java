@@ -1,0 +1,7 @@
+package pl.zzpj2021.solid.isp.contactbook.solution;
+
+public interface Emailable {
+    String getEmailAddress();
+    void setEmailAddress(String emailAddress);
+
+}
