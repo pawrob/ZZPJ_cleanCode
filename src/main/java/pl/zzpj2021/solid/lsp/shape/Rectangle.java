@@ -6,8 +6,7 @@ import lombok.Setter;
 public class Rectangle implements Shape {
 
     @Getter
-    @Setter
-    protected double width, height;
+    private double width, height;
 
     @Override
     public double calculateArea() {
@@ -18,4 +17,13 @@ public class Rectangle implements Shape {
     public double calculateCircumference() {
         return (width + height) * 2;
     }
+
+    protected void setWidth(double width) {
+        this.width = width;
+    }
+
+    protected void setHeight(double height) {
+        this.height = height;
+    }
+
 }
